@@ -1,4 +1,16 @@
-Poi nel file css:
-.tipo1 {
- display: block
+.title {
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+}
+
+.contents-grid {
+  display: grid;
+  grid-template-columns: 33% 33% 34%;
+}
+
+.columns {
+  width: 33%;
 }
