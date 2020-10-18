@@ -2,18 +2,38 @@ import React from 'react';
 import './App.css';
 
 function App() {
+  let subjects: string[] = [];
+
+  for (let i: number = 0; i < 10; i++) {
+    subjects.push(`Materia N.${i}`);
+  }
+
   return (
-    <div className="App" >
-        <p>
-        The only video platform to review your DMI lessons online from the comfort of your home.
-        </p>
-    <p className="credits">
-      Coded by 
-      <a href="https://github.com/Hollerith98T">Giuseppe Mazzara</a>
-      <a href="https://github.com/Lorenzo-Pappalardo">Lorenzo Pappalardo</a>
-    </p>
+    <div>
+      <h1 className="title">DMIStream</h1>
+      <p className="description">
+        Bellissima web app per la visualizzazione di lezioni direttamente prelevate in maniera
+        totalmente affidabile da Microsoft Teams
+      </p>
+      <div className="contents-grid">
+        <div className="columns">
+          {subjects.map((subject, index) => (
+            <p>{subject}</p>
+          ))}
+        </div>
+        <div className="columns">
+          {subjects.map((subject, index) => (
+            <p>{subject}</p>
+          ))}
+        </div>
+        <div className="columns">
+          {subjects.map((subject, index) => (
+            <p>{subject}</p>
+          ))}
+        </div>
+      </div>
     </div>
-  );  
+  );
 }
 
 export default App;
