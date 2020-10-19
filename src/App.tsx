@@ -16,17 +16,17 @@ function App() {
         totalmente affidabile da Microsoft Teams
       </p>
       <div className="contents-grid">
-        <div className="columns">
+        <div className="columns1">
           {subjects.map((subject, index) => (
             <p>{subject}</p>
           ))}
         </div>
-        <div className="columns">
+        <div className="columns2">
           {subjects.map((subject, index) => (
             <p>{subject}</p>
           ))}
         </div>
-        <div className="columns">
+        <div className="columns3">
           {subjects.map((subject, index) => (
             <p>{subject}</p>
           ))}
