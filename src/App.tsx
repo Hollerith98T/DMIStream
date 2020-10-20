@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { subjects1, subjects2, subjects3 } from './groups';
+import { subjects1a, subjects1b, subjects2a, subjects2b, subjects3a, subjects3b} from './groups';
 
 function App() {
   return (
@@ -15,13 +15,13 @@ function App() {
           <div className="first-semester">
             <h2> Primo Anno</h2>
             <h4> Primo semestre </h4>
-            {subjects1.map((subject, index) => (
+            {subjects1a.map((subject, index) => (
               <p>{subject}</p>
             ))}
           </div>
           <div className="second-semester">
             <h4> Secondo semestre </h4>
-            {subjects1.map((subject, index) => (
+            {subjects1b.map((subject, index) => (
               <p>{subject}</p>
             ))}
           </div>
@@ -29,15 +29,15 @@ function App() {
 
         <div className="columns2">
           <div className="first-semester">
-          <h2> Secondo Anno</h2>
+            <h2> Secondo Anno</h2>
             <h4> Primo semestre </h4>
-            {subjects2.map((subject, index) => (
+            {subjects2a.map((subject, index) => (
               <p>{subject}</p>
             ))}
           </div>
           <div className="second-semester">
             <h4> Secondo semestre </h4>
-            {subjects2.map((subject, index) => (
+            {subjects2b.map((subject, index) => (
               <p>{subject}</p>
             ))}
           </div>
@@ -45,15 +45,15 @@ function App() {
 
         <div className="columns3">
           <div className="first-semester">
-          <h2> Terzo Anno</h2>
+            <h2> Terzo Anno</h2>
             <h4> Primo semestre </h4>
-            {subjects3.map((subject, index) => (
+            {subjects3a.map((subject, index) => (
               <p>{subject}</p>
             ))}
           </div>
           <div className="second-semester">
             <h4> Secondo semestre </h4>
-            {subjects3.map((subject, index) => (
+            {subjects3b.map((subject, index) => (
               <p>{subject}</p>
             ))}
           </div>

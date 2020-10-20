@@ -1,17 +1,11 @@
-export subject: string[][] = [
-    subjects1-1s: string[],
-    subjects2-2s: string[];
-]
-
-
-const subjects1a: string[] = [
+export const subjects1a: string[] = [
     'ARCHITETTURA DEGLI ELABORATORI E LABORATORIO',
     'FONDAMENTI DI INFORMATICA',
     'PROGRAMMAZIONE I E LABORATORIO',
     'ULTERIORI CONOSCENZE LINGUISTICHE',
     'ALGEBRA LINEARE E GEOMETRIA',
 ];
-const subjects1b: string[] = [
+export const subjects1b: string[] = [
     'ELEMENTI DI ANALISI MATEMATICA 1',
     'PROGRAMMAZIONE II',
     'ALGEBRA LINEARE E GEOMETRIA',
