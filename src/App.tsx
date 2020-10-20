@@ -12,8 +12,8 @@ function App() {
     <div>
       <h1 className="title">DMIStream</h1>
       <p className="description">
-        Bellissima web app per la visualizzazione di lezioni direttamente prelevate in maniera
-        totalmente affidabile da Microsoft Teams
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
       </p>
       <div className="contents-grid">
         <div className="columns1">
