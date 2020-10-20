@@ -1,39 +1,26 @@
-.title {
-  text-align: center;
-}
-
+.title,
 .description {
   text-align: center;
 }
 
 .contents-grid {
   display: grid;
-  grid-template-columns: 33%, 33%, 34%;
+  grid-template-columns: 33% 33% 34%;
 }
 
-.columns1 {
-  width: 33%;
-  height: 100%;
+.columns1,
+.columns2,
+.columns3 {
   border: 1px solid;
-  color: #3D5F00;
-  background: #A3FF00;
-  text-align: center
+  text-align: center;
+  color: #3d5f00;
+  background: #a3ff00;
 }
 
 .columns2 {
-  width: 33%;
-  height: 100%;
-  border: 1px solid;
-  color: #3D5F00;
   background: #cce207;
-  text-align: center
 }
 
 .columns3 {
-  width: 33%;
-  height: 100%;
-  border: 1px solid;
-  color: #3D5F00;
   background: #ffae00;
-  text-align: center
 }
