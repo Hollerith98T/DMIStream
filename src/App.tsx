@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import { subjects1a, subjects1b, subjects2a, subjects2b, subjects3a, subjects3b} from './groups';
+import { subjects1a, subjects1b, subjects2a, subjects2b, subjects3a, subjects3b } from './groups';
 
-function App() {
+function App(): JSX.Element {
   return (
     <div>
       <h1 className="title">DMIStream</h1>
