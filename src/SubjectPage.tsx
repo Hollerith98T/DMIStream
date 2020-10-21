@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Subject(): JSX.Element {
+export function Subject(): JSX.Element {
   const title: string = 'elem. di analisi 1';
   const description: string = 'si occupa dello studio delle funzioni..';
   const image: string = '../public/logo512.png';
