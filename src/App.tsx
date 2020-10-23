@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import { HashRouter, Route, Redirect } from 'react-router-dom';
 import { Homepage } from './Homepage';
 import { Subject } from './SubjectPage';

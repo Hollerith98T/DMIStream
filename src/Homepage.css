@@ -8,19 +8,19 @@
   grid-template-columns: 33% 33% 34%;
 }
 
-.columns1,
-.columns2,
-.columns3 {
+.firstColumn,
+.secondColumn,
+.thirdColumn {
   border: 1px solid;
   text-align: center;
   color: #3d5f00;
   background: #a3ff00;
 }
 
-.columns2 {
+.secondColumn {
   background: #cce207;
 }
 
-.columns3 {
+.thirdColumn {
   background: #ffae00;
 }

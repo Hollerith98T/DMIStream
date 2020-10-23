@@ -1,5 +1,6 @@
 import React from 'react';
 import { subjects1a, subjects1b, subjects2a, subjects2b, subjects3a, subjects3b } from './groups';
+import './Homepage.css';
 
 export function Homepage(): JSX.Element {
   return (
@@ -10,53 +11,31 @@ export function Homepage(): JSX.Element {
         been the industry's standard dummy text ever since the 1500s.
       </p>
       <div className="contents-grid">
-        <div className="columns1">
-          <div className="first-semester">
-            <h2> Primo Anno</h2>
-            <h4> Primo semestre </h4>
-            {subjects1a.map((subject, index) => (
-              <p>{subject}</p>
-            ))}
-          </div>
-          <div className="second-semester">
-            <h4> Secondo semestre </h4>
-            {subjects1b.map((subject, index) => (
-              <p>{subject}</p>
-            ))}
-          </div>
-        </div>
+        {columnContents('first')}
+        {columnContents('second')}
+        {columnContents('third')}
+      </div>
+    </div>
+  );
+}
 
-        <div className="columns2">
-          <div className="first-semester">
-            <h2> Secondo Anno</h2>
-            <h4> Primo semestre </h4>
-            {subjects2a.map((subject, index) => (
-              <p>{subject}</p>
-            ))}
-          </div>
-          <div className="second-semester">
-            <h4> Secondo semestre </h4>
-            {subjects2b.map((subject, index) => (
-              <p>{subject}</p>
-            ))}
-          </div>
-        </div>
-
-        <div className="columns3">
-          <div className="first-semester">
-            <h2> Terzo Anno</h2>
-            <h4> Primo semestre </h4>
-            {subjects3a.map((subject, index) => (
-              <p>{subject}</p>
-            ))}
-          </div>
-          <div className="second-semester">
-            <h4> Secondo semestre </h4>
-            {subjects3b.map((subject, index) => (
-              <p>{subject}</p>
-            ))}
-          </div>
-        </div>
+function columnContents(year: string): JSX.Element {
+  return (
+    <div className={year + 'Column'}>
+      {year === 'first' && <h2>Primo Anno</h2>}
+      {year === 'second' && <h2>Secondo Anno</h2>}
+      {year === 'third' && <h2>Terzo Anno</h2>}
+      <div className="first-semester">
+        <h4>Primo semestre</h4>
+        {year === 'first' && subjects1a.map((subject, index) => <p>{subject}</p>)}
+        {year === 'second' && subjects2a.map((subject, index) => <p>{subject}</p>)}
+        {year === 'third' && subjects3a.map((subject, index) => <p>{subject}</p>)}
+      </div>
+      <div className="second-semester">
+        <h4>Secondo semestre</h4>
+        {year === 'first' && subjects1b.map((subject, index) => <p>{subject}</p>)}
+        {year === 'second' && subjects2b.map((subject, index) => <p>{subject}</p>)}
+        {year === 'third' && subjects3b.map((subject, index) => <p>{subject}</p>)}
       </div>
     </div>
   );
