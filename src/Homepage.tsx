@@ -22,7 +22,7 @@ export function Homepage(): JSX.Element {
 function columnContents(year: string): JSX.Element {
   return (
     <div className={year + 'Column'}>
-      {year === 'first' && <h2>Primo Annoooo</h2>}
+      {year === 'first' && <h2>Primo Anno</h2>}
       {year === 'second' && <h2>Secondo Anno</h2>}
       {year === 'third' && <h2>Terzo Anno</h2>}
       <div className="first-semester">
