@@ -1,5 +1,5 @@
 import React from 'react';
-import { subjects1a, subjects1b, subjects2a, subjects2b, subjects3a, subjects3b } from './groups';
+import { subjects1a, subjects1b, subjects2a, subjects2b, subjects3a, subjects3b } from './Subjects';
 import './Homepage.css';
 
 export function Homepage(): JSX.Element {

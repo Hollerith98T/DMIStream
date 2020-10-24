@@ -48,3 +48,9 @@ export const subjects3b: string[] = [
     'TECNOLOGIE PER I SISTEMI DISTRIBUITI E IL WEB CON LABORATORIO',
     'WEB DEVELOPMENT'
 ];
+
+interface Subject{
+    title: string;
+    description: string;
+}
+
