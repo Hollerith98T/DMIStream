@@ -1,5 +1,5 @@
 export const subjects1a: string[] = [
-    'ARCHITETTURA DEGLI ELABORATORI E LABORATORIO',
+    'ARCHITETTURA DEGLI ELABORATORI',
     'FONDAMENTI DI INFORMATICA',
     'PROGRAMMAZIONE I E LABORATORIO',
     'ULTERIORI CONOSCENZE LINGUISTICHE',
@@ -54,3 +54,17 @@ interface Subject{
     description: string;
 }
 
+export let title: string[] = [
+    'materia 1',
+    'materia 2',
+    'materia 3',
+    'materia 4',
+    'materia 5'
+];
+
+export let description: string[] = [
+    'descrizione 1',
+    'descrizione 2',
+    'descrizione 3',
+    'descrizione 4'
+];

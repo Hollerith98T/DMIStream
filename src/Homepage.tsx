@@ -1,6 +1,7 @@
 import React from 'react';
 import { subjects1a, subjects1b, subjects2a, subjects2b, subjects3a, subjects3b } from './Subjects';
 import './Homepage.css';
+import {Link} from 'react-router-dom';
 
 export function Homepage(): JSX.Element {
   return (
@@ -27,15 +28,21 @@ function columnContents(year: string): JSX.Element {
       {year === 'third' && <h2>Terzo Anno</h2>}
       <div className="first-semester">
         <h4>Primo semestre</h4>
-        {year === 'first' && subjects1a.map((subject, index) => <p>{subject}</p>)}
-        {year === 'second' && subjects2a.map((subject, index) => <p>{subject}</p>)}
-        {year === 'third' && subjects3a.map((subject, index) => <p>{subject}</p>)}
+        {year === 'first' && subjects1a.map((subject, index) => 
+         <p><Link to="/{subject}">{subject}</Link></p>)}
+        {year === 'second' && subjects2a.map((subject, index) =>
+         <p><Link to="/{subject}">{subject}</Link></p>)}
+        {year === 'third' && subjects3a.map((subject, index) =>
+          <p><Link to="/{subject}">{subject}</Link></p>)}
       </div>
       <div className="second-semester">
         <h4>Secondo semestre</h4>
-        {year === 'first' && subjects1b.map((subject, index) => <p>{subject}</p>)}
-        {year === 'second' && subjects2b.map((subject, index) => <p>{subject}</p>)}
-        {year === 'third' && subjects3b.map((subject, index) => <p>{subject}</p>)}
+        {year === 'first' && subjects1b.map((subject, index) =>
+          <p><Link to="/{subject}">{subject}</Link></p>)}
+        {year === 'second' && subjects2b.map((subject, index) =>
+          <p><Link to="/{subject}">{subject}</Link></p>)}
+        {year === 'third' && subjects3b.map((subject, index) =>
+          <p><Link to="/{subject}">{subject}</Link></p>)}
       </div>
     </div>
   );
