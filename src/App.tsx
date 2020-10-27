@@ -12,7 +12,7 @@ function App(): JSX.Element {
       <Route exact path="/subjectpage">
         <Subject />
       </Route>
-      <Redirect to="/homepage/" />
+      <Redirect to="/homepage" />
     </HashRouter>
   );
 }
